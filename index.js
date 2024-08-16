@@ -46,6 +46,7 @@ app.get('/', (req, res) => {
     res.json(tv_ar);
 })
 
+
 app.get('/:id', (req, res) => {
     const { id } = req.params;
     const tv1 = tv_ar.find(tv => tv.id == id);
